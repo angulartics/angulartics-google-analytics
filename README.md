@@ -69,8 +69,8 @@ npm run build
 [npm-url]: https://npmjs.org/package/angulartics-google-analytics
 [npm-downloads-image]: https://img.shields.io/npm/dm/angulartics-google-analytics.svg
 [npm-downloads-url]: https://npmjs.org/package/angulartics-google-analytics
-[bower-image]: https://img.shields.io/bower/v/bootstrap.svg
-[bower-url]: http://bower.io/search/?q=angulartics
+[bower-image]: https://img.shields.io/bower/v/angulartics-google-analytics.svg
+[bower-url]: http://bower.io/search/?q=angulartics-google-analytics
 [dep-status-image]: https://img.shields.io/david/angulartics/angulartics-google-analytics.svg
 [dep-status-url]: https://david-dm.org/angulartics/angulartics-google-analytics
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
