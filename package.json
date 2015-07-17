@@ -1,0 +1,52 @@
+{
+  "name": "angulartics-google-analytics",
+  "version": "0.1.0",
+  "description": "Google Analytics plugin for Angulartics",
+  "keywords": [
+    "google",
+    "analytics",
+    "plugin",
+    "angular",
+    "angulartics"
+  ],
+  "author": "Luis Farzati <lfarzati@gmail.com> (https://github.com/luisfarzati)",
+  "contributors": [
+    "Simon <sim.wicki@gmail.com> (https://github.com/zwacky)",
+    "Simon Morvan <garphy@zone84.net> (https://github.com/morvans)",
+    "Albert Martin <albert@astonishdesign.com> (https://github.com/Ignigena)",
+    "Jared Orme <ormagomy@gmail.com> (https://github.com/ormagomy)",
+    "Thom Leigh <trolleycrash@gmail.com> (https://github.com/trolleycrash)",
+    "Dexter Clark <dexter.clark@gmail.com> (https://github.com/birge)",
+    "ravishivt <javishi@gmail.com> (https://github.com/ravishivt)",
+    "Tim Elfelt <timelf123@gmail.com> (https://github.com/timelf123)",
+    "Michael Kolodny <michaelckolodny@gmail.com> (https://github.com/mkolodny)",
+    "Robert Bak <robert.bak.wroclaw@gmail.com> (https://github.com/robertbak)",
+    "philo <phil@stormid.com> (https://github.com/Philo)",
+    "Gilad Beeri <giladb.dev@gmail.com> (https://github.com/giladbeeri)",
+    "Bettina Steger <betty@lingohub.com> (https://github.com/lpsBetty)",
+    "Blake Miller <blake@tengrade.com> (https://github.com/blak3mill3r)",
+    "Hannah Fouasnon <hanelifou@gmail.com> (https://github.com/fouasnon)",
+    "Alex Logvynovskiy <alex@busuu.com> (https://github.com/dr-axly)",
+    "Fil Maj <maj.fil@gmail.com> (https://github.com/filmaj)"
+  ],
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rm -r dist",
+    "prebuild": "npm run clean",
+    "build": "mkdir -p dist && uglifyjs lib/angulartics-google-analytics.js --compress --source-map dist/angulartics-google-analytics.min.js.map --source-map-root .. --source-map-url ../dist/angulartics-google-analytics.min.js.map -o dist/angulartics-google-analytics.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angulartics/angulartics-google-analytics"
+  },
+  "bugs": {
+    "url": "https://github.com/angulartics/angulartics-google-analytics/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "angulartics": "~0.18.0"
+  },
+  "devDependencies": {
+    "uglify-js": "^2.4.23"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "angulartics-google-analytics",
+  "main": "./dist/angulartics-google-analytics.min.js",
+  "dependencies": {
+    "angulartics": "~0.18.0"
+  },
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "node_modules",
+    "example",
+    "package.json",
+    "lib/index.js"
+  ]
+}
