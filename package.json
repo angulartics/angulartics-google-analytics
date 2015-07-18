@@ -31,7 +31,7 @@
   ],
   "main": "lib/index.js",
   "scripts": {
-    "clean": "rm -r dist",
+    "clean": "rm -rf dist",
     "prebuild": "npm run clean",
     "build": "mkdir -p dist && uglifyjs lib/angulartics-google-analytics.js --compress --source-map dist/angulartics-google-analytics.min.js.map --source-map-root .. --source-map-url ../dist/angulartics-google-analytics.min.js.map -o dist/angulartics-google-analytics.min.js"
   },
