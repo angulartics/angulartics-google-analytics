@@ -6,7 +6,9 @@ Google Analytics plugin for [Angulartics](http://github.com/luisfarzati/angulart
 
 ## Install
 
-You can install this package either with `npm` or with `bower`.
+First make sure you've read installation and setup instructions for [Angulartics](https://github.com/luisfarzati/angulartics#install).
+
+Then you can install this package either with `npm` or with `bower`.
 
 ### npm
 
@@ -17,8 +19,15 @@ npm install angulartics-google-analytics
 Then add `angulartics.google.analytics` as a dependency for your app:
 
 ```javascript
-angular.module('myApp', [require('angulartics-google-analytics')]);
+require('angulartics')
+
+angular.module('myApp', [
+  'angulartics', 
+  require('angulartics-google-analytics')
+]);
 ```
+
+> Please note that core Angulartics is not yet packaged for npm. This will change once we move core into the new organization.
 
 ### bower
 
@@ -26,7 +35,7 @@ angular.module('myApp', [require('angulartics-google-analytics')]);
 bower install angulartics-google-analytics
 ```
 
-Add a `<script>` to your `index.html`:
+Add the `<script>` to your `index.html`:
 
 ```html
 <script src="/bower_components/angulartics-google-analytics/dist/angulartics-google-analytics.min.js"></script>
@@ -35,7 +44,10 @@ Add a `<script>` to your `index.html`:
 Then add `angulartics.google.analytics` as a dependency for your app:
 
 ```javascript
-angular.module('myApp', ['angulartics.google.analytics']);
+angular.module('myApp', [
+  'angulartics', 
+  'angulartics.google.analytics'
+]);
 ```
 
 ## Changes in the Google Analytics snippet
@@ -69,8 +81,8 @@ npm run build
 [npm-url]: https://npmjs.org/package/angulartics-google-analytics
 [npm-downloads-image]: https://img.shields.io/npm/dm/angulartics-google-analytics.svg
 [npm-downloads-url]: https://npmjs.org/package/angulartics-google-analytics
-[bower-image]: https://img.shields.io/bower/v/angulartics-google-analytics.svg
-[bower-url]: http://bower.io/search/?q=angulartics-google-analytics
+[bower-image]: https://img.shields.io/bower/v/bootstrap.svg
+[bower-url]: http://bower.io/search/?q=angulartics
 [dep-status-image]: https://img.shields.io/david/angulartics/angulartics-google-analytics.svg
 [dep-status-url]: https://david-dm.org/angulartics/angulartics-google-analytics
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
