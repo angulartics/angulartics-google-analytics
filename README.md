@@ -1,5 +1,7 @@
 ## angulartics-google-analytics
 
+[![Join the chat at https://gitter.im/angulartics/angulartics-google-analytics](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/angulartics/angulartics-google-analytics?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![NPM version][npm-image]][npm-url] [![NPM downloads][npm-downloads-image]][npm-downloads-url] [![Bower version][bower-image]][bower-url] [![Dependencies status][dep-status-image]][dep-status-url] [![MIT license][license-image]][license-url]
 
 Google Analytics plugin for [Angulartics](http://github.com/luisfarzati/angulartics).
