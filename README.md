@@ -27,7 +27,7 @@ angular.module('myApp', [
 ]);
 ```
 
-> Please note that core Angulartics is not yet packaged for npm. This will change once we move core into the new organization.
+> Please note that core Angulartics doesn't export the name yet, but it will once we move it into the new organization.
 
 ### bower
 
