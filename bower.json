@@ -1,6 +1,6 @@
 {
   "name": "angulartics-google-analytics",
-  "main": "./dist/angulartics-google-analytics.min.js",
+  "main": "lib/angulartics-google-analytics.js",
   "dependencies": {
     "angulartics": "~0.20"
   },
