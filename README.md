@@ -2,11 +2,11 @@
 
 [![NPM version][npm-image]][npm-url] [![NPM downloads][npm-downloads-image]][npm-downloads-url] [![Bower version][bower-image]][bower-url] [![Dependencies status][dep-status-image]][dep-status-url] [![MIT license][license-image]][license-url] [![Join the Slack chat][slack-image]][slack-url]
 
-Google Analytics plugin for [Angulartics](http://github.com/luisfarzati/angulartics).
+Google Analytics plugin for [Angulartics](https://github.com/angulartics/angulartics).
 
 ## Install
 
-First make sure you've read installation and setup instructions for [Angulartics](https://github.com/luisfarzati/angulartics#install).
+First make sure you've read installation and setup instructions for [Angulartics](https://github.com/angulartics/angulartics#install).
 
 Then you can install this package either with `npm` or with `bower`.
 
