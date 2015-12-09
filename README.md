@@ -71,7 +71,7 @@ Documentation is available on the [Angulartics site](http://luisfarzati.github.i
 Module settings are done via the `$analyticsProvider.settings.ga` property.  The following are GA-specific properties:
 * `transport`
   _(Default: `undefined`)_ -
-  sets the `transport` property for see the [GA Transport Documentation](https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#transport) for more information how to properly set this value.  This should be a string.
+  sets the `transport` property for the `ga` function call.  See the [GA Transport Documentation](https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#transport) for more information how to properly set this value.  This should be a string.
 
 ## Development
 
