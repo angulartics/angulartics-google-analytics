@@ -2,7 +2,7 @@
   "name": "angulartics-google-analytics",
   "main": "lib/angulartics-google-analytics.js",
   "dependencies": {
-    "angulartics": "~0.20"
+    "angulartics": "~1.0.0"
   },
   "ignore": [
     "**/.*",
