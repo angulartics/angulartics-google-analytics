@@ -44,7 +44,7 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "angulartics": "~0.20"
+    "angulartics": "~1.0.0"
   },
   "devDependencies": {
     "uglify-js": "^2.4.23"
