@@ -31,7 +31,7 @@
 	</div>
 </div>
 
-<div class="container">
+<div class="container" ng-controller="ExampleCtrl as ctrl">
 	<div ng-view></div>
 	<hr>
 
@@ -45,6 +45,8 @@
 
 	<!-- note that analytics-category is never inferred, and is required by GA... if you leave it out, no event will be tracked -->
 	<button analytics-on analytics-category="Commands"  analytics-label="Button4 label" analytics-value="1" class="btn btn-info">Button 4</button>
+
+	<button ng-click="ctrl.userTimingsTest()" class="btn btn-default">UserTimings Test</button>
 	<hr>
 
 	<p class="alert alert-success">
@@ -55,15 +57,27 @@
 
 <script>
 	angular.module('sample', ['angulartics', 'angulartics.google.analytics'])
-	.config(function ($routeProvider, $analyticsProvider) {
+	.config(function ($routeProvider) {
 		$routeProvider
-			.when('/',  { template: '<h1>Root Page</h1>', controller: 'SampleCtrl' })
-			.when('/a', { template: '<h1>Page "A"</h1>',  controller: 'SampleCtrl' })
-			.when('/b', { template: '<h1>Page "B"</h1>',  controller: 'SampleCtrl' })
-			.when('/c', { template: '<h1>Page "C"</h1>',  controller: 'SampleCtrl' })
+			.when('/',  { template: '<h1>Root Page</h1>' })
+			.when('/a', { template: '<h1>Page "A"</h1>' })
+			.when('/b', { template: '<h1>Page "B"</h1>' })
+			.when('/c', { template: '<h1>Page "C"</h1>' })
 			.otherwise({ redirectTo: '/' });
 	})
-	.controller('SampleCtrl', function () {});
+	.controller('ExampleCtrl', function($timeout, $analytics) {
+		this.userTimingsTest = function() {
+			var start = Date.now();
+			$timeout(function() {
+				var props = {
+					timingCategory: 'Testing',
+					timingVar: 'UserTimings',
+					timingValue:  Date.now() - start
+				};
+				$analytics.userTimings(props);
+			}, 1000);
+		};
+	});
 </script>
 </body>
 </html>
