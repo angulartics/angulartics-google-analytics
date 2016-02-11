@@ -1,6 +1,6 @@
 {
   "name": "angulartics-google-analytics",
-  "main": "lib/angulartics-google-analytics.js",
+  "main": "lib/angulartics-ga.js",
   "dependencies": {
     "angulartics": "~1.0.0"
   },
