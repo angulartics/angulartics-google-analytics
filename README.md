@@ -38,7 +38,7 @@ bower install angulartics-google-analytics
 Add the `<script>` to your `index.html`:
 
 ```html
-<script src="/bower_components/angulartics-google-analytics/dist/angulartics-google-analytics.min.js"></script>
+<script src="/bower_components/angulartics-google-analytics/dist/angulartics-ga.min.js"></script>
 ```
 
 Then add `angulartics.google.analytics` as a dependency for your app:
