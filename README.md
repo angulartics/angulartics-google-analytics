@@ -65,7 +65,7 @@ Done. Open your app, browse across the different routes and check [the realtime 
 
 ## Documentation
 
-Documentation is available on the [Angulartics site](http://luisfarzati.github.io/angulartics).
+Documentation is available on the [Angulartics site](http://angulartics.github.io/).
 
 ### Settings
 Module settings are done via the `$analyticsProvider.settings.ga` property.  The following are GA-specific properties:
