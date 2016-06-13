@@ -1,6 +1,6 @@
 {
   "name": "angulartics-google-analytics",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Google Analytics plugin for Angulartics",
   "keywords": [
     "google",
@@ -45,7 +45,7 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "angulartics": "~1.0.0"
+    "angulartics": "^1.0.0"
   },
   "devDependencies": {
     "uglify-js": "^2.4.23"
