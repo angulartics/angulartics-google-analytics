@@ -1,6 +1,6 @@
 {
   "name": "angulartics-google-analytics",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Google Analytics plugin for Angulartics",
   "keywords": [
     "google",
@@ -49,6 +49,11 @@
     "angulartics": "^1.0.0"
   },
   "devDependencies": {
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.5.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "phantomjs-prebuilt": "^2.1.14",
     "uglify-js": "^2.4.23"
   }
 }
