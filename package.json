@@ -1,6 +1,6 @@
 {
   "name": "angulartics-google-analytics",
-  "version": "0.4.2",
+  "version": "0.4.1",
   "description": "Google Analytics plugin for Angulartics",
   "keywords": [
     "google",
@@ -35,7 +35,7 @@
     "clean": "rm -rf dist",
     "prebuild": "npm run clean",
     "build": "mkdir -p dist && uglifyjs lib/angulartics-ga.js --compress --source-map dist/angulartics-ga.min.js.map --source-map-root .. --source-map-url ../dist/angulartics-ga.min.js.map -o dist/angulartics-ga.min.js",
-    "test": "node_modules/karma/bin/karma start --single-run=true"
+    "test": "npm build"
   },
   "repository": {
     "type": "git",

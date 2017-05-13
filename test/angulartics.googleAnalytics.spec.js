@@ -530,7 +530,7 @@ describe('angulartics-ga', function() {
 
 			beforeEach(function() {
 
-				analytics.settings.ga.additionalAccountNames = ['foo'];
+				analytics.settings.ga.additionalAccountNames = ['foo', 'bar'];
 
 			});
 
@@ -538,9 +538,10 @@ describe('angulartics-ga', function() {
 
 				analytics.pageTrack('/foo');
 
-				expect(window.ga.q.length).toEqual(2);
+				expect(window.ga.q.length).toEqual(3);
 				expect(window.ga.q[0][0]).toBe('send');
 				expect(window.ga.q[1][0]).toBe('foo.send');
+				expect(window.ga.q[2][0]).toBe('bar.send');
 
 				done();
 
